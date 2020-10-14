@@ -1,6 +1,6 @@
 # Node.js with MySQL quick example
 
-> Pequeno crud usando Node.js + MySQL
+> Pequeno CRUD usando Node.js + MySQL sem ORM
 
 ## Setup
 
@@ -15,8 +15,8 @@
 ### Passos para executar
 
 - Faça o download deste repositório na sua máquina
-- Instala as depedências executando `yarn add .`
-- Cria o arquivo `.env` e substitua por informações do seu banco:
+- Instale as depedências executando `yarn` ou `npm install` (Se estiver a usar o npm)
+- Crie um arquivo com nome de `.env` e substitua por informações do seu banco:
 
 ```
 DB_HOST=SEU_LOCALHOST
@@ -27,8 +27,8 @@ DB_NAME=NOME_DO_BANCO
 APP_PORT=3000
 ```
 
-- Finalmente, execute na `CMD` dentro do projecto o comando: `yarn dev`
-- Visita `localhost:3000/` e enjoy 🎉!
+- Finalmente, execute no `CMD` ou `Terminal` dentro da raiz do projecto o comando: `yarn run start:dev`
+- acesse `localhost:3000` e enjoy! :smile:
 
 ## Contribuindo 👨‍👩‍👧‍👧
 
