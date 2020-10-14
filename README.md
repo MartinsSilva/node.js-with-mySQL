@@ -27,8 +27,8 @@ DB_NAME=NOME_DO_BANCO
 APP_PORT=3000
 ```
 
-- Finalmente, execute no `CMD` ou `Terminal` dentro da raiz do projecto o comando: `yarn run start:dev`
-- acesse `localhost:3000` e enjoy! :smile:
+- Finalmente, execute no `CMD` ou `Terminal` dentro da raiz do projecto o comando: `yarn run start:dev` ou `npm run start:dev` (Se estiver a usar o npm)
+- Acesse `localhost:3000` e enjoy! :smile:
 
 ## Contribuindo 👨‍👩‍👧‍👧
 
