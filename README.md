@@ -30,6 +30,25 @@ APP_PORT=3000
 - Finalmente, execute no `CMD` ou `Terminal` dentro da raiz do projecto o comando: `yarn run start:dev` ou `npm run start:dev` (Se estiver a usar o npm)
 - Acesse `localhost:3000` e enjoy! :smile:
 
+### Endpoints
+
+- BP como Body Parameters
+    - BP(i) com BP Parameter com índice i
+
+|Metodo|Endpoint  |Descrição                                                      |BP |
+|---   |---       |---                                                            |---|
+|GET   |/         |retorna todos os users da base de dados                        |---|
+|GET   |/users/:id|retorna o user com o id passado como parâmetro da base de dados|---|
+|POST  |/users/   |Insere um novo user na base de dados                           |BP1|
+
+#### BP1
+```json
+{
+    "name": "CDA",
+    "email": "cda@gmail.com"
+}
+```
+
 ## Contribuindo 👨‍👩‍👧‍👧
 
 Contribuições, issues e funcionalidades novas são sempre bem-vindas.
