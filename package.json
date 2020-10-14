@@ -1,15 +1,16 @@
 {
-  "name": "nodemysql",
-  "version": "1.0.0",
-  "main": "main.js",
-  "scripts": {
-    "dev": "nodemon main.js"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mysql": "^2.18.1",
-    "nodemon": "^2.0.4"
-  }
+    "name": "nodemysql",
+    "version": "1.0.0",
+    "main": "./src/app/app.js",
+    "scripts": {
+        "start": "node ./src/bin/server",
+        "start:dev": "nodemon ./src/bin/server"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "mysql": "^2.18.1",
+        "nodemon": "^2.0.4"
+    }
 }
