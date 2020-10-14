@@ -21,7 +21,7 @@ exports.getUsers = (_request, response) => {
 };
 
 exports.getUser = (request, response) => {
-    const userId = request.params.id;
+    let userId = request.params.id;
     usersService
         .getUserQuery(userId)
         .then((user) => {
@@ -31,12 +31,31 @@ exports.getUser = (request, response) => {
                 data: user
             } : {
                 statusCode: 404,
-                data: "Not Found"
+                data: 'Not Found'
             };
             return response
                 .status(result.statusCode)
                 .send({
                     user: result.data
+                });
+        }).catch((error) => {
+            return response
+                .status(500)
+                .send({
+                    error: error.message
+                });
+        });
+};
+
+exports.createUser = (request, response) => {
+    let params = request.body;
+    usersService
+        .createUserQuery(params)
+        .then((user) => {
+            return response
+                .status(201)
+                .send({
+                    message: 'User successfully registered'
                 });
         }).catch((error) => {
             return response
